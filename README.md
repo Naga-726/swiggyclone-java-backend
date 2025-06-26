@@ -15,6 +15,70 @@ This is a backend clone of Swiggy built using Java and Spring Boot.
 - JPA / Hibernate
 - Maven
 
+##Project Structure
++---.settings
+|       org.eclipse.core.resources.prefs
+|       org.eclipse.jdt.core.prefs
+|
++---src
+|   +---main
+|   |   +---java
+|   |   |   \---com
+|   |   |       \---example
+|   |   |           \---swiggyclone4
+|   |   |               |   SwiggyClone4Application.java
+|   |   |               |
+|   |   |               +---Controller
+|   |   |               |       UserController.java
+|   |   |               |
+|   |   |               +---Custom
+|   |   |               |       JwtService.java
+|   |   |               |
+|   |   |               +---Dto
+|   |   |               |       AuthResponse.java
+|   |   |               |       FoodItemesByPriceDto.java
+|   |   |               |       FoodItemsDto.java
+|   |   |               |       RestaurantDto.java
+|   |   |               |       SigninRequest.java
+|   |   |               |       SignupRequest.java
+|   |   |               |
+|   |   |               +---Entity
+|   |   |               |       Cart.java
+|   |   |               |       FoodItems.java
+|   |   |               |       Restaurants.java
+|   |   |               |       Role.java
+|   |   |               |       User.java
+|   |   |               |
+|   |   |               +---JwtConfiguration
+|   |   |               |       Jwtfilter.java
+|   |   |               |
+|   |   |               +---Repository
+|   |   |               |       CartRepository.java
+|   |   |               |       FoodItemRepository.java
+|   |   |               |       PriceRepository.java
+|   |   |               |       RestaurantFooditemsRepository.java
+|   |   |               |       RestaurantRepository.java
+|   |   |               |       UserRepository.java
+|   |   |               |
+|   |   |               +---SecurityConfiguration
+|   |   |               |       SecurityConfig.java
+|   |   |               |
+|   |   |               \---Service
+|   |   |                       AuthService.java
+|   |   |                       CartService.java
+|   |   |                       CustomuserDetailsService.java
+|   |   |                       FoodItemService.java
+|   |   |                       FoodItemServiceByPrice.java
+|   |   |                       RestaurantFooditems.java
+|   |   |                       RestaurantService.java
+|   |   |                       SigninService.java
+|   |   |
+|   |   \---resources
+|   |       |   application.properties
+|   |       |
+|   |       +---static
+|   |       \---templates
+
 ## Getting Started
 
 1. Clone the repo:
